@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/viewproduct.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Form Container -->
+        <div class="pokecontainer" id="form-container">
+            <div class="header">
+              <button onclick="loadContent('daziboard.html')">
+              <i class="fa fa-arrow-left arrow"></i> <!-- Arrow on the left --> </button>
+                <!-- Dropdown menu -->
+                <select id="categorySelect">
+                    <option value="">View All</option>
+                    <option value="Fruit">Fruit</option>
+                    <option value="Vegetables">Vegetable</option>
+                    <option value="A-Z">A-Z</option>
+                </select>
+
+                <button style = "position:relative; margin-left: 90px; " onclick="loadContent('addproduct.html')">
+                    <i class="fa fa-plus"></i> ITEM
+                </button>
+            </div>
+
+            <div class="grocey-items" id="itemContainer">
+                <!-- this is where items gets dynamically inserted from javascript -->
+            </div>
+        </div>
+    </div>
+  <script src = "javascripts/viewproduct.js"></script>
+</body>
+</html>

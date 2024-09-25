@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/daziboard.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Form Container -->
+        <div class="pokecontainer" id="form-container">
+          <div class="header">
+                <button onclick="loadContent('viewproduct.html')">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3514/3514491.png" style = "width: 30px; height: 30px; ">
+                </button>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="...">
+                    <button class="search-button" onclick="searchItems()"><i class="fa fa-search" style="font-size:24px"></i></button>
+                    
+                    <!-- dropdown for saved list -->
+                    <div class="dropdown">
+                        <button class="search-button" id="LOADSAVEDLIST" style="display: flex; justify-content: center; align-items: center; margin-left: 2px;">
+                            <i class="fa fa-bookmark-o" style="height: 24px; width: 20px; margin-right: -0px;"></i>
+                        </button>
+                        <div class="dropdown-content" id="savedListsDropdown">
+                            <!-- seved list will be placed here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="itemListContainer">
+                <!-- Item list will be inserted here -->
+            </div>
+            
+            <button id = "savelistbutton" style="position: fixed; bottom: 10px;" onclick="saveCurrentList()">SAVE LIST</button>
+        </div>
+    </div>
+    <script src = "javascripts/daziboard.js"></script>
+</body>
+</html>

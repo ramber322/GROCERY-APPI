@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="pokecontainer">
+            <div class="header">
+                <button onclick="loadContent('chatgpt.html')" style="background: none; border: none; padding: 0; cursor: pointer;">
+                    <img 
+                        style="position: relative; right: 20px; width: 75px; height: 75px;" 
+                        src="https://cdn-icons-png.flaticon.com/512/6259/6259966.png" 
+                        alt="Icon">
+                </button>
+            </div>
+
+            <div id="login-form">
+                <input type="text" id="login-username" placeholder="Username" style="text-align: center;">
+                <input type="password" id="login-password" placeholder="Password" style="text-align: center;">
+                <button onclick="login()">Login</button>
+                
+                <a style = "position: relative; left: 260px; top: 6px; " href= "register.html"  >Register</a>
+            </div>
+        </div>
+    </div> <!-- container end -->
+    <script src = "javascripts/loginregister.js"></script>
+</body>
+</html>

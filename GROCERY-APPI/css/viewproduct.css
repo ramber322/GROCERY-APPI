@@ -1,0 +1,146 @@
+body, html {
+margin: 0;
+padding: 0;
+height: 100%;
+overflow: hidden; 
+font-family: Arial, sans-serif;
+}
+
+.container {
+display: flex;
+justify-content: center;
+align-items: flex-start; 
+height: 100vh; 
+width: 100vw;
+background-color: #4cae4c; 
+box-sizing: border-box;
+background-image: url('https://static.vecteezy.com/system/resources/previews/003/536/556/non_2x/christmas-tree-background-free-vector.jpg');
+}
+
+.pokecontainer {
+background-color: #45DFB1;
+max-width: 350px; 
+width: 100%;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start; 
+height: 100vh; 
+position: relative;
+overflow: hidden; 
+}
+
+.header {
+width: 100%;
+position: sticky;
+top: 0;
+left: 0;
+background-color:#80ED99; 
+display: flex;
+justify-content: flex-start; 
+align-items: center;
+padding: 10px;
+z-index: 1000;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+box-sizing: border-box;
+border: 1px solid #ffffff;
+border-radius: 10px;
+}
+
+.header .arrow {
+font-size: 24px; 
+color: black; 
+margin-right: 15px; 
+}
+
+.header select {
+margin-right: 15px;
+padding: 5px;
+font-size: 16px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background-color: #fff;
+}
+
+.header button {
+background: none;
+border: none;
+padding: 0;
+cursor: pointer;
+font-size: 18px;
+color: rgb(0, 0, 0);
+display: flex;
+align-items: center;
+}
+
+.header i {
+font-size: 28px;
+margin-right: 5px;
+}
+
+.grocey-items {
+display: flex;
+flex-wrap: wrap;
+margin: 25px 5px 0 5px;
+max-width: 350px;
+gap: 10px;
+overflow-y: auto;
+overflow-x: hidden; 
+max-height: calc(100vh - 70px); 
+padding-bottom: 10px; 
+}
+
+.pokecards {
+width: 150px;
+height: 150px;
+background-color: rgb(255, 255, 255);
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+
+.pokecards img {
+height: 110px;
+width: 110px;
+}
+
+.pokecards .icon {
+position: absolute;
+height: 35px;
+width: 35px;
+right: 5px;
+top: 5px;
+}
+
+.pokecards .title {
+font-weight: bold;
+color: rgb(0, 0, 0);
+position: absolute;
+bottom: 10px;
+left: 50%;
+transform: translateX(-50%);
+margin: 0;
+text-align: center;
+}
+
+/* mdia queery for device with a maximum width of 375px */
+@media (max-width: 375px) {
+.pokecards {
+  width: 140px;
+  height: 140px;
+}
+.pokecards img {
+  height: 90px;
+  width: 90px;
+}
+}
+
+
+::-webkit-scrollbar {
+display: none;
+}

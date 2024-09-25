@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/addproduct.css">
+</head>
+<body>
+    <div class="container">
+        <div class="pokecontainer">
+            <div class="header">
+                <button onclick="loadContent('viewproduct.html')" style="background: none; border: none; padding: 0; cursor: pointer;">
+                    <i class="fa fa-chevron-up" style="font-size:48px;color:rgb(0, 0, 0)"></i>
+                </button>
+                <p>Add Item</p>
+            </div>
+            <form id="form">
+                <input type="text" id="productName" placeholder="Enter Product Name">
+                <input type="text" id="brand" placeholder="Enter Brand">
+                <input type="number" id="price" placeholder="Enter Price">
+                <input type="text" id="weightVolume" placeholder="Enter Weight">
+                <select id="category">
+                    <option value="" disabled selected>Select Category</option>
+                    <option value="Fruit">Fruits</option>
+                    <option value="Vegetables">Vegetables</option>
+                </select>
+                <select id="store">
+                    <option value="Robinsons">Robinsons</option>
+                    <option value="Market">Wet Market</option>
+                </select>
+                <input type="file" id="imageInput" accept="image/*" onchange="previewImage(event)">
+                <img id="imagePreview" class="image-preview" alt="Image Preview">
+                <button type="button" onclick="storeInput()">Store Item</button>
+            </form>
+        </div>
+    </div> <!-- container end -->
+    <script src = "javascripts/addproduct.js"></script>
+</body>
+</html>
